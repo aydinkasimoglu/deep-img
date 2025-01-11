@@ -43,7 +43,7 @@ export default function FileDropZone({ onFilesAdded }: FileDropZoneProps) {
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
             aria-live="polite"
-            className={`mt-2 flex justify-center rounded-lg border border-dashed border-gray-400 transition-all duration-300 ease-in-out dark:border-white/25 ${
+            className={`flex w-full max-w-[30rem] flex-1 justify-center rounded-lg border border-dashed border-gray-400 transition-all duration-300 ease-in-out dark:border-white/25 ${
                 isDragging ? "px-12 py-14" : "px-10 py-12"
             } ${isDragging ? "border-2" : "border"} scale-125`}
         >
@@ -56,7 +56,7 @@ export default function FileDropZone({ onFilesAdded }: FileDropZoneProps) {
                     className="mx-auto h-12 w-12 invert dark:invert-0"
                     aria-hidden
                 />
-                <div className="mt-4 flex text-lg leading-6 text-gray-700 dark:text-gray-400">
+                <div className="mt-4 flex text-lg leading-6 text-gray-700 md:flex-col dark:text-gray-400">
                     <label
                         htmlFor="file-upload"
                         className="relative cursor-pointer rounded-md font-semibold text-indigo-700 dark:text-indigo-400"
